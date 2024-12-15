@@ -63,26 +63,24 @@ main {
     color: rgba(255, 255, 255, 0.8);
     text-transform: uppercase;
     font-weight: 400;
-    margin-bottom: 0; /* Отступ между "Features" и основным заголовком */
+    margin-bottom: 0;
     text-align: center;
-    position: relative; /* Оставляем обычное позиционирование */
+    position: relative;
 }
 
-/* Основной заголовок "Using design..." */
 .main-section h1 {
-    font-size: 3.5rem; /* Увеличиваем размер шрифта */
-    margin-bottom: 2rem; /* Пространство под заголовком */
-    line-height: 1.5; /* Добавляем чуть больше межстрочного пространства */
-    font-weight: bold; /* Усиливаем акцент на тексте */
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    font-weight: bold;
 }
-
 
 .features {
     display: flex;
     gap: 2rem;
     position: relative;
     z-index: 1;
-    flex-wrap: wrap; /* Для адаптации в маленьких окнах */
+    flex-wrap: wrap;
 }
 
 .feature-card {
@@ -90,8 +88,8 @@ main {
     padding: 1.6rem;
     border-radius: 10px;
     text-align: center;
-    width: 100%; /* По умолчанию занимает всю ширину */
-    max-width: 350px; /* Максимальная ширина */
+    width: 100%;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,7 +102,6 @@ main {
 .feature-card:hover {
     transform: translateY(-10px);
 }
-
 
 .feature-card img.feature-image {
     width: 100px;
@@ -159,11 +156,8 @@ footer {
     margin-top: auto;
 }
 
+/* Медиазапросы */
 
-
-/* === Медиазапросы === */
-
-/* Для планшетов (до 768px) */
 @media (max-width: 768px) {
     .laptop-image {
         order: -1;
@@ -173,12 +167,12 @@ footer {
         padding: 0 5%;
     }
     .features {
-        flex-direction: column; /* Вертикальное выравнивание */
+        flex-direction: column;
         align-items: center;
     }
     .main-section h1 {
-        font-size: 2rem; /* Уменьшаем размер текста */
-        text-align: center; /* Центрируем */
+        font-size: 2rem;
+        text-align: center;
     }
     .main-section h1.features-title {
         font-size: 1.2rem;
@@ -195,7 +189,6 @@ footer {
     }
 }
 
-/* Для мобильных устройств (до 480px) */
 @media (max-width: 480px) {
     main {
         padding-left: 5%;
@@ -203,8 +196,8 @@ footer {
     }
     .feature-card {
         width: 100%;
-        max-width: none; /* Убираем ограничение по ширине */
-        height: auto; /* Высота по содержимому */
+        max-width: none;
+        height: auto;
     }
     .feature-card h2 {
         font-size: 1.2rem;
